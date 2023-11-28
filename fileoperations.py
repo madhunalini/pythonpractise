@@ -1,16 +1,16 @@
+def file_operations(file_path,key,value):
+    with open(file_path,"r") as file:
+        lines= file.readlines()
 
-def file_operations(filepath,key, value):
-    with open(filepath, "r") as file:
-        files= file.readline()
-
-    with open(filepath,"w") as file:
-        for line in files:
+    with open(file_path, "w"):
+        for line in lines:
             if key in line:
-                file.write(key + "" + value)
+                file.write(key +"="+ value)
             else:
                 file.write(line)
 
-file_operations("server_config.py",max_connections,1000)
+        
+file_operations("server_config.py","max_connections","1000")
 
              
 
