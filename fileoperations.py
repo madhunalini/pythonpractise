@@ -10,7 +10,7 @@ def file_operations(filepath,key, value):
             else:
                 file.write(line)
 
-file_operations("workspaces/pythonpractise/server_config.py",max_connections,1000)
+file_operations("server_config.py",max_connections,1000)
 
              
 
