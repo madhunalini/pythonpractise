@@ -1,4 +1,4 @@
-max_connections=200
+
 def file_operations(filepath,key, value):
     with open(filepath, "r") as file:
         files= file.readline()
