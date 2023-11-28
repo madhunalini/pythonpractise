@@ -10,7 +10,7 @@ def file_operations(file_path,key,value):
                 file.write(line)
 
         
-file_operations("server_config.py","max_connections","1000")
+file_operations("max_connections.py","max_connections","1000")
 
              
 
